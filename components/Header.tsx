@@ -3,7 +3,6 @@ import {
 	GlobeAltIcon,
 	MagnifyingGlassIcon,
 	UserCircleIcon,
-	UsersIcon,
 } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 
@@ -35,11 +34,14 @@ function Header() {
 
 			{/* right */}
 			<div className='flex items-center space-x-4 justify-end text-gray-500'>
-				<p>Become a host</p>
-				<GlobeAltIcon className='h-6' />
-				<Bars3Icon className='h-6' />
-				<UserCircleIcon className='h-6' />
-				<UsersIcon className='h-6' />
+				<p className='hidden md:inline cursor-pointer'>Become a host</p>
+				<GlobeAltIcon className='h-6 cursor-pointer' />
+
+				<div className='flex items-center space-x-2 border-2 p-2 rounded-full'>
+					<Bars3Icon className='h-6' />
+					<UserCircleIcon className='h-6' />
+				</div>
+				{/* <UsersIcon className='h-6' /> */}
 			</div>
 		</header>
 	)
