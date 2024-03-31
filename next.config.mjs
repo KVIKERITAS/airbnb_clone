@@ -10,6 +10,14 @@ const nextConfig = {
 				protocol: 'http',
 				hostname: 'ruartecontract.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'links.papareact.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'a0.muscache.com',
+			},
 		],
 	},
 }
