@@ -1,6 +1,4 @@
 import Banner from '@/components/Banner'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import LargeCard from '@/components/LargeCard'
 import MediumCard from '@/components/MediumCard'
 import SmallCard from '@/components/SmallCard'
@@ -27,7 +25,6 @@ export default async function Home() {
 
 	return (
 		<div>
-			<Header />
 			<Banner />
 
 			<main className='max-w-7xl mx-auto px-8 sm:px-16'>
@@ -62,7 +59,6 @@ export default async function Home() {
 					buttonText='Get Inspired'
 				/>
 			</main>
-			<Footer />
 		</div>
 	)
 }
